@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Resgister</title>
+
+    <script src="bootstrap-5.0.0-beta1-dist/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="bootstrap-5.0.0-beta1-dist/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-5.0.0-beta1-dist/offcanvas/offcanvas.css" rel="stylesheet">
+    <script src="own-js/validations.js"></script>
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-5.0.0-beta1-dist/css/signin.css" rel="stylesheet">
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Double D Petshop</a>
+                <button class="navbar-toggler p-0 border-0" type="button" id="offcanvas" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="items.html" aria-current="page" >Items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <script src="bootstrap-5.0.0-beta1-dist/offcanvas/offcanvas.js"></script>
+
+        <main class="form-signin">
+                <div class="container">
+                    <form>
+                        <h1 class="h4 mb-4 fw-normal">Sign Up</h1>
+                        <label for="rEmail">Email address</label>
+                        <input type="email" id="rEmail" class="form-control" placeholder="Email address" required>
+                        <label for="rPassword">Password</label>
+                        <input type="password" id="rPassword" class="form-control" placeholder="Password" required>
+                        <label for="rcPassword">Confirm Password</label>
+                        <input type="password" id="rcPassword" class="form-control" placeholder="Confirm Password" required>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" onclick="return createAccount()" type="submit" style="margin-bottom: 5px;">Register</button>
+                        <a href="index.html" class="w-100 btn btn-lg btn-dark" type="submit">Cancel</a>
+                    </form>
+                    <a href="login.html">Sign In</a></br>
+                    <a href="recovery.html">Forgot your password?</a>
+                </div>
+        </main>
+    </body>
+</html>
